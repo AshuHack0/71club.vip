@@ -10,13 +10,13 @@ date_default_timezone_set('Asia/Kolkata');
 
 
 
-define('DB_SERVER', 'localhost');
+define('DB_SERVER', '127.0.0.1');
 
-define('DB_USERNAME', 'dragonlo_71club');
+define('DB_USERNAME', 'indgames_app');
 
-define('DB_PASSWORD', 'dragonlo_71club');
+define('DB_PASSWORD', 'YourStrongPasswordHere!');
 
-define('DB_NAME', 'dragonlo_71club');
+define('DB_NAME', 'indgames_db');
 
 
 
