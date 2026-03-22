@@ -44,56 +44,56 @@
 						
 					 if($bannerId == 78){
 							$data['title'] = 'Benefits of Using AR WALLET';
-							$data['img'] = '<p><br><b>Click </b><a href="https://t.me/arbpaychannel" target="_blank" style="background-color: rgb(255, 255, 255);"><span style="font-family: &quot;Arial Black&quot;;">ARWallet Channel</span></a><b> for more information<br><br></b></p><p><br><img src="https://71club.vip/assets/banners/1.png" style="width: 702px;"></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/1.png';
+							$data['img'] = '<p><br><b>Click </b><a href="https://t.me/arbpaychannel" target="_blank" style="background-color: rgb(255, 255, 255);"><span style="font-family: &quot;Arial Black&quot;;">ARWallet Channel</span></a><b> for more information<br><br></b></p><p><br><img src="https://indgames.online/assets/banners/1.png" style="width: 702px;"></p>';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/1.png';
 							$data['jumpType'] = 1;
 							$data['contents'] = '';
 						}
 						else if($bannerId == 47){
 							$data['title'] = 'Extra Bonus Aviator';
 							$data['img'] = '<p><img src="https://ossimg.51game-game.com/51game/editor/editor_20240919191832nvnq.png" style="width: 768px;"><br></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/2.png';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/2.png';
 							$data['jumpType'] = 1;
 							$data['contents'] = '';
 						}
 						else if($bannerId == 45){
 							$data['title'] = 'VIP Level Bonus';
-							$data['img'] = '<p><img src="https://71club.vip/assets/banners/ex.png" style="width: 768px;"><br></p><p><span style="font-size: 14px;">Exclusively at 71Club, unlock additional rewards each time you achieve a new VIP level for the first time!</span></p><p><span style="font-size: 14px;"><br></span></p><p><span style="font-size: 14px;">Visit our bonus site and claim your reward now!</span></p><p><a href="http://71club.vip" target="_blank">71club.vip</a></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/3.png';
+							$data['img'] = '<p><img src="https://indgames.online/assets/banners/ex.png" style="width: 768px;"><br></p><p><span style="font-size: 14px;">Exclusively at 71Club, unlock additional rewards each time you achieve a new VIP level for the first time!</span></p><p><span style="font-size: 14px;"><br></span></p><p><span style="font-size: 14px;">Visit our bonus site and claim your reward now!</span></p><p><a href="http://71club.vip" target="_blank">71club.vip</a></p>';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/3.png';
 							$data['jumpType'] = 1;
 							$data['contents'] = '';
 						}
 						else if($bannerId == 46){
 							$data['title'] = 'Extra Bonus On Slots';
 							$data['img'] = '<p><img src="https://ossimg.51game-game.com/51game/editor/editor_20240919191950m93k.png" style="width: 768px;"><br></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/4.png';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/4.png';
 							$data['jumpType'] = 1;
 							$data['contents'] = '';
 						}
 						else if($bannerId == 56){
 							$data['title'] = '71Club Guard Against Scams';
-							$data['img'] = '<p><img src="https://71club.vip/assets/banners/trx.png" style="width: 398px;"><br></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/55.png';
+							$data['img'] = '<p><img src="https://indgames.online/assets/banners/trx.png" style="width: 398px;"><br></p>';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/55.png';
 							$data['jumpType'] = 1;
 							$data['contents'] = '';
 						}
 						else if($bannerId == 65){
 							$data['title'] = 'First Recharge Bonus';
 							$data['img'] = '';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/6.png';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/6.png';
 							$data['jumpType'] = 2;
 							$data['contents'] = '/activity/FirstRecharge';
 						}
 						else if($bannerId == 71){
 							$data['title'] = 'Member Recharge Benefits';
-							$data['img'] = '[{"Id":"17225024498060d979egil58","Url":"https://71club.vip/apiimages/BDGWin/banner/rechargebenifet.png"}]';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/3.png';
+							$data['img'] = '[{"Id":"17225024498060d979egil58","Url":"https://indgames.online/apiimages/BDGWin/banner/rechargebenifet.png"}]';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/3.png';
 							$data['jumpType'] = 3;
 						}
 						else if($bannerId == 66){
 							$data['title'] = "71club.vip AGENT GOLD EVENT\t";
-							$data['img'] = '<p><img src="https://71club.vip/apiimages/BDGWin/editor/editor_20240716090948aako.jpg" style="width: 658px;"><br></p>';
-							$data['coverUrl'] = 'https://71club.vip/assets/banners/3.png';
+							$data['img'] = '<p><img src="https://indgames.online/apiimages/BDGWin/editor/editor_20240716090948aako.jpg" style="width: 658px;"><br></p>';
+							$data['coverUrl'] = 'https://indgames.online/assets/banners/3.png';
 							$data['jumpType'] = 1;
 						}
 						

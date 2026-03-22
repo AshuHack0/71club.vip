@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'GET') {
                 $sesresult = $conn->query($sesquery);
                 $sesnum = mysqli_num_rows($sesresult);
                 if($sesnum == 1){
-                    $sites = 'https://71club.vip';
+                    $sites = 'https://indgames.online';
                     
                     // Payment options based on payid
                     $data = ["rechargetypelist" => []];

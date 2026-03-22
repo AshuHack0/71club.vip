@@ -47,7 +47,7 @@
 						$samasyesreni = mysqli_fetch_array($samasyephalitansa);
 						$data[0]['typeID'] = 3;
 						$data[0]['name'] = 'Self-service Customer Service';
-						$data[0]['url'] = 'https://71club.vip';
+						$data[0]['url'] = 'https://indgames.online';
 						$data[0]['sort'] = 1;
 						
 						$res['data'] = $data;

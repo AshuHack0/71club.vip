@@ -5,7 +5,7 @@
                 "id": 167,
                 "vendorId": 40,
                 "vendorCode": "ARLottery",
-                "iconUrl": "https://71club.vip/assets/champ.png",
+                "iconUrl": "https://indgames.online/assets/champ.png",
                 "categoryType": 3,
                 "sumBonus": 132571.00,
                 "maxBonus": 29999.00,

@@ -74,7 +74,7 @@ $first_result = $selectupiresult_two[1];
 		
 		$urlarr = explode (",", $urlInfo);
 		$theirurl = $urlarr[0];
-		$myurl = 'https://71club.vip';
+		$myurl = 'https://indgames.online';
 		
 		if($myurl){
 ?>

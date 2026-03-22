@@ -64,7 +64,7 @@
                     $uid = $row['id'] ?? null;
                     $no = $row['mobile'] ?? null;
 
-                    $gameUrl = "https://71club.vip/soon.html?gameCode={$gameCode}&vendorCode={$vendorCode}";
+                    $gameUrl = "https://indgames.online/soon.html?gameCode={$gameCode}&vendorCode={$vendorCode}";
 
                     if ($sesnum === 1) {
                         $data['url'] = $gameUrl;

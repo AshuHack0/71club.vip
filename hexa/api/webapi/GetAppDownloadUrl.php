@@ -27,7 +27,7 @@
 			$shonustr = '{"language":'.$language.',"random":"'.$random.'"}';
 			$shonusign = strtoupper(md5($shonustr));
 			if($shonusign == $signature){				
-				$data['androidUrl'] = 'https://71club.vip/daman.apk';
+				$data['androidUrl'] = 'https://indgames.online/daman.apk';
 				$data['iosUrl'] = '';
 				$data['isAppForceUpdate'] = 0;	
 				$data['latestAndroidShellVersion'] = 0;
