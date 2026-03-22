@@ -1,0 +1,2 @@
+import{R as e,W as r}from"./common.modules-62343d57.js";import{_ as o}from"./page-activity-ActivityDetail-f331937d.js";import"./native/index-196b79e6.js";import"./en-94a065ad.js";import"./page-turntable-assets-d6267459.js";const i={};function n(t,a){return r(),e("div")}const d=o(i,[["render",n],["__file","/usr/local/jenkins-prod/workspace/ar023-india-51game/src/views/main/PointDetail/index.vue"]]);export{d as default};
+//# sourceMappingURL=page-main-PointDetail-e5f368b4.js.map

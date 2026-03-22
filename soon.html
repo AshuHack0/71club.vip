@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>71Club.Vip - Coming Soon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #475569);
+      background-size: 400% 400%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      animation: gradientBG 15s ease infinite;
+    }
+    
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .floating-elements {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .floating-icon {
+      position: absolute;
+      font-size: 2.5rem;
+      color: rgba(255,255,255,0.1);
+      animation: float 8s ease-in-out infinite;
+      filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+    }
+    
+    .floating-icon:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+    .floating-icon:nth-child(2) { top: 80%; left: 15%; animation-delay: 2s; }
+    .floating-icon:nth-child(3) { top: 30%; right: 10%; animation-delay: 4s; }
+    .floating-icon:nth-child(4) { bottom: 10%; right: 15%; animation-delay: 1s; }
+    .floating-icon:nth-child(5) { top: 60%; left: 30%; animation-delay: 3s; }
+    .floating-icon:nth-child(6) { top: 20%; right: 25%; animation-delay: 5s; }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+      50% { transform: translateY(-40px) rotate(10deg) scale(1.1); }
+    }
+    
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 1s ease;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .card::before {
+      content: '';
+      position: absolute;
+      width: 150%;
+      height: 150%;
+      top: -25%;
+      left: -25%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: pulse 8s ease infinite;
+      z-index: -1;
+    }
+    
+    .card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      padding: 2px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+    }
+    
+    .logo {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #00e5ff, #f472b6, #facc15);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradientShift 8s ease infinite;
+      background-size: 200% 200%;
+    }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    
+    .subheading {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .countdown-item {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      min-width: 70px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .countdown-value {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(45deg, #facc15, #f472b6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .countdown-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 0.5rem;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .social-icon {
+      color: white;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-5px) scale(1.2);
+    }
+    
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .notify-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 2rem;
+      background: linear-gradient(90deg, #f472b6, #facc15);
+      color: #111827;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(250, 204, 21, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .notify-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .notify-btn:hover::before {
+      left: 100%;
+    }
+    
+    .notify-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(250, 204, 21, 0.4);
+    }
+    
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+    }
+    
+    .feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #facc15;
+    }
+    
+    .feature-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.8);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-elements">
+    <div class="floating-icon"><i class="fas fa-dice"></i></div>
+    <div class="floating-icon"><i class="fas fa-chess-queen"></i></div>
+    <div class="floating-icon"><i class="fas fa-coins"></i></div>
+    <div class="floating-icon"><i class="fas fa-spade"></i></div>
+    <div class="floating-icon"><i class="fas fa-crown"></i></div>
+    <div class="floating-icon"><i class="fas fa-trophy"></i></div>
+  </div>
+
+  <div class="card">
+    <div class="logo">
+      <i class="fas fa-gamepad"></i>
+    </div>
+    <h1>71Club.Vip</h1>
+    <p class="subheading">We're working hard to bring API games for Your amazing Gaming Experience. Our platform will be ready soon!</p>
+    
+    <div class="countdown">
+      <div class="countdown-item">
+        <div class="countdown-value" id="days">00</div>
+        <div class="countdown-label">Days</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="hours">00</div>
+        <div class="countdown-label">Hours</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="minutes">00</div>
+        <div class="countdown-label">Minutes</div>
+      </div>
+      <div class="countdown-item">
+        <div class="countdown-value" id="seconds">00</div>
+        <div class="countdown-label">Seconds</div>
+      </div>
+    </div>
+    
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+        <div class="feature-label">Fast Games</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="feature-label">Secure</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-gem"></i></div>
+        <div class="feature-label">Premium</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+        <div class="feature-label">Rewards</div>
+      </div>
+    </div>
+    
+    <button class="notify-btn">
+      <i class="fas fa-bell"></i> Notify Me
+    </button>
+    
+    <div class="footer">
+      © 2025 71Club.Vip | All Rights Reserved
+    </div>
+  </div>
+
+<script>
+  const countDownDate = new Date();
+  countDownDate.setDate(countDownDate.getDate() + 14);
+
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+    
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+    document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+    document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+    document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+    
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("days").innerHTML = "00";
+      document.getElementById("hours").innerHTML = "00";
+      document.getElementById("minutes").innerHTML = "00";
+      document.getElementById("seconds").innerHTML = "00";
+    }
+  }, 1000);
+
+  document.addEventListener('mousemove', (e) => {
+    const card = document.querySelector('.card');
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--x', x + 'px');
+    card.style.setProperty('--y', y + 'px');
+  });
+</script>
+</body>
+</html>
